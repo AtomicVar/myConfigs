@@ -11,6 +11,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'miyakogi/conoline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Valloric/YouCompleteMe'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 call plug#end()
 
 set nocompatible
@@ -51,3 +52,13 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Conoline
 let g:conoline_auto_enable = 1
+
+" Clang-format
+map <C-K> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+
+" Prettier
+let g:prettier#config#tab_width = 4
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#trailing_comma = 'es5'
+let g:prettier#config#bracket_spacing = 'true' 
