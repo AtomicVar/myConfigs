@@ -61,4 +61,7 @@ imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
 let g:prettier#config#tab_width = 4
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#trailing_comma = 'es5'
-let g:prettier#config#bracket_spacing = 'true' 
+let g:prettier#config#bracket_spacing = 'true'
+
+" YCM
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
